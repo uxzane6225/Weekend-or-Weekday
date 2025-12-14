@@ -1,4 +1,5 @@
 let inputDay;
+var audioSong = document.getElementById("audioSong");
 let volumeOn = document.getElementById("songVolumeOn");
 let volumeOff = document.getElementById("songVolumeOff");
 
@@ -23,13 +24,13 @@ let submitDay = document.getElementById("submitDay").onclick = function(){
             document.getElementById("outputDay").textContent = `(=^·.·^=) Meow!`;
             break;
         default:
-            document.getElementById("outputDay").textContent = `${inputDay} is not a day! >:(`;
+            document.getElementById("outputDay").textContent = `${inputDay} isn't a day! >:(`;
             break;
     }
 }
 
 let songVolumneOn = document.getElementById("songVolumeOn").onclick = function(){
-    audioSong = document.getElementById("audioSong").muted = true;
+    audioSong.pause();
     if(volumeOn.style.display === "none"){
         volumeOn.style.display = "inline"
         volumeOff.style.display = "none"
@@ -40,7 +41,7 @@ let songVolumneOn = document.getElementById("songVolumeOn").onclick = function()
 }
 
 let songVolumneOff = document.getElementById("songVolumeOff").onclick = function(){
-    audioSong = document.getElementById("audioSong").muted = false;
+    audioSong.play();
     if(volumeOff.style.display === "none"){
         volumeOn.style.display = "none"
         volumeOff.style.display = "inline"
