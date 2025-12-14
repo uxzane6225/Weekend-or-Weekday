@@ -1,2 +1,1 @@
-The webpage is a personal project to practice coding in HTML, CSS and JavaScript.
-The content of the webpage is to identify whether a given day is a weekend or a weekday.
+This is a personal practice project using HTML, CSS, and JavaScript that determines whether a given day is a weekend or a weekday.
