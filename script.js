@@ -1,4 +1,6 @@
 let audioSong = document.getElementById("audioSong");
+let volumeOn = document.getElementById("songVolumeOn");
+let volumeOff = document.getElementById("songVolumeOff");
 
 let inputDay = document.getElementById("inputDay").addEventListener("keypress", function(event){
     if (event.key === 'Enter') {
@@ -57,21 +59,21 @@ let submitDay = document.getElementById("submitDay").onclick = function(){
 let songVolumneOn = document.getElementById("songVolumeOn").onclick = function(){
     audioSong.pause();
     if(volumeOn.style.display === "none"){
-        volumeOn.style.display = "inline";
-        volumeOff.style.display = "none";
+        volumeOn.style.display = "inline"
+        volumeOff.style.display = "none"
     }else{
-        volumeOn.style.display = "none";
-        volumeOff.style.display = "inline";
+        volumeOn.style.display = "none"
+        volumeOff.style.display = "inline"
     }
 }
 
 let songVolumneOff = document.getElementById("songVolumeOff").onclick = function(){
     audioSong.play();
     if(volumeOff.style.display === "none"){
-        volumeOn.style.display = "none";
-        volumeOff.style.display = "inline";
+        volumeOn.style.display = "none"
+        volumeOff.style.display = "inline"
     }else{
-        volumeOn.style.display = "inline";
-        volumeOff.style.display = "none";
+        volumeOn.style.display = "inline"
+        volumeOff.style.display = "none"
     }
 }
